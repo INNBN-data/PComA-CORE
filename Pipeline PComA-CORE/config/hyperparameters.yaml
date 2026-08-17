@@ -1,0 +1,50 @@
+catboost:
+  iterations: 1000
+  learning_rate: 0.05
+  depth: 6
+  l2_leaf_reg: 3.0
+  border_count: 254
+  random_seed: 2024
+  loss_function: "Logloss"
+  eval_metric: "AUC"
+  verbose: false
+  allow_writing_files: false
+
+xgboost_classifier:
+  n_estimators: 1000
+  max_depth: 6
+  learning_rate: 0.05
+  subsample: 0.8
+  colsample_bytree: 0.8
+  reg_alpha: 0.1
+  reg_lambda: 1.0
+  random_state: 2024
+  objective: "binary:logistic"
+  eval_metric: "logloss"
+  n_jobs: 1
+
+xgboost_aft:
+  objective: "survival:aft"
+  eval_metric: "aft-nloglik"
+  aft_loss_distribution: "normal"
+  aft_loss_distribution_scale: 1.0
+  eta: 0.05
+  max_depth: 3
+  subsample: 0.8
+  colsample_bytree: 0.8
+  alpha: 0.1
+  lambda: 1.0
+  seed: 2024
+  nthread: 1
+  num_boost_round: 1000
+  early_stopping_rounds: 50
+
+elastic_net:
+  alpha: 0.01
+  l1_ratio: 0.5
+  max_iter: 5000
+
+ordered_logit:
+  method: "bfgs"
+  maxiter: 1000
+  disp: false

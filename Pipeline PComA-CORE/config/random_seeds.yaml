@@ -1,0 +1,7 @@
+global_seed: 2024
+outer_cv_splits: 5
+inner_cv_splits: 5
+n_bootstrap: 2000
+n_permutations: 1000
+conformal_alpha: 0.10
+learning_curve_fractions: [0.20, 0.40, 0.60, 0.80, 1.00]

@@ -1,0 +1,17 @@
+Reference R environment documented for the manuscript-concordant implementation.
+Exact numerical reproduction requires the original locked session information.
+
+R version: 4.2 or later
+Core packages:
+  survival
+  glmnet
+  rms
+  riskRegression
+  pec
+  splines
+  flexsurv
+  cmprsk
+  tidyverse
+  rmda
+
+Run `sessionInfo()` after reproducing the locked analysis and archive the complete output with the final release.

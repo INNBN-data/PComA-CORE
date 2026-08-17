@@ -1,0 +1,48 @@
+cff-version: 1.2.0
+message: "If you use this repository, please cite the original manuscript and this repository."
+title: "PComA-CORE: Posterior Communicating Artery Aneurysm Microsurgery - Anatomy-Informed Explainable AI Framework"
+version: 1.0.0
+date-released: 2026-08-17
+license: MIT
+authors:
+  - family-names: "Șerban"
+    given-names: "Matei"
+    email: "mateiserban@innbn.com"
+    affiliation: "Department of Neurosurgery, Carol Davila University of Medicine and Pharmacy; Department of Vascular Neurosurgery, National Institute of Neurological Disorders and Neurovascular Disease; Puls Med Association"
+  - family-names: "Toader"
+    given-names: "Corneliu"
+    email: "corneliutoader@innbn.com"
+    affiliation: "Department of Neurosurgery, Carol Davila University of Medicine and Pharmacy; Department of Vascular Neurosurgery, National Institute of Neurological Disorders and Neurovascular Disease; Puls Med Association"
+  - family-names: "Ciurea"
+    given-names: "Alexandru Vlad"
+    email: "prof.avciurea@gmail.com"
+    affiliation: "Department of Neurosurgery, Carol Davila University of Medicine and Pharmacy; Puls Med Association; Medical Section, Romanian Academy"
+  - family-names: "Dănăilă"
+    given-names: "Leon"
+    email: "acad.leondanaila@gmail.com"
+    affiliation: "Department of Neurosurgery, Carol Davila University of Medicine and Pharmacy; Department of Vascular Neurosurgery, National Institute of Neurological Disorders and Neurovascular Disease; Medical Section, Romanian Academy"
+  - family-names: "Covache-Busuioc"
+    given-names: "Răzvan-Adrian"
+    email: "razvancovache@innbn.com"
+    affiliation: "Department of Neurosurgery, Carol Davila University of Medicine and Pharmacy; Department of Vascular Neurosurgery, National Institute of Neurological Disorders and Neurovascular Disease; Puls Med Association"
+preferred-citation:
+  type: article
+  title: "Posterior Communicating Artery Aneurysm Microsurgery: PComA-CORE, an Anatomy-Informed Explainable AI Framework for Complexity, Neurovascular Risk, Oculomotor Recovery and Functional Outcome"
+  year: 2026
+  authors:
+    - family-names: "Șerban"
+      given-names: "Matei"
+    - family-names: "Toader"
+      given-names: "Corneliu"
+    - family-names: "Ciurea"
+      given-names: "Alexandru Vlad"
+    - family-names: "Dănăilă"
+      given-names: "Leon"
+    - family-names: "Covache-Busuioc"
+      given-names: "Răzvan-Adrian"
+keywords:
+  - posterior communicating artery aneurysm
+  - microsurgery
+  - explainable artificial intelligence
+  - temporal validation
+  - oculomotor nerve palsy

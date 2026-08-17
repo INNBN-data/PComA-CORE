@@ -1,0 +1,21 @@
+name: pcoma-core
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - numpy>=1.24
+  - pandas>=1.5
+  - scikit-learn>=1.2
+  - catboost>=1.2
+  - xgboost>=1.7
+  - lightgbm>=3.3
+  - shap>=0.42
+  - interpret>=0.4
+  - matplotlib>=3.6
+  - scipy>=1.10
+  - statsmodels>=0.14
+  - scikit-survival>=0.22
+  - lifelines>=0.27
+  - pyyaml>=6
+  - joblib>=1.2
+  - pytest>=7

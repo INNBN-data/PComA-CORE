@@ -1,0 +1,9 @@
+DATASET STATUS
+
+Cohort type: Real clinical cohort
+Institution: National Institute of Neurological Disorders and Neurovascular Disease (INNBN)
+De-identification status: Fully de-identified according to the project documentation
+Patient-level data included in this public archive: No
+Expected controlled analytical path: data/private/pcoma_registry.csv
+Synthetic or simulated patient rows included: No
+External access: Institutional approval, applicable ethics review, and a data-use agreement are required

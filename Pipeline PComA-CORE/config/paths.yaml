@@ -1,0 +1,8 @@
+raw_data: "data/private/pcoma_registry.csv"
+cleaned_data: "data/cleaned_pcoma.csv"
+development_data: "data/development.csv"
+temporal_data: "data/temporal.csv"
+features_development: "data/features_development.csv"
+features_temporal: "data/features_temporal.csv"
+missingness_development: "results/generated/missingness_development.csv"
+missingness_temporal: "results/generated/missingness_temporal.csv"

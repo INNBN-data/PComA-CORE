@@ -1,0 +1,187 @@
+metadata:
+  status: "locked manuscript-reported targets"
+  generated_by_repository: false
+  note: "Model scripts write reproduced values to results/generated and never overwrite this file."
+
+cohort:
+  total: 687
+  development: 564
+  temporal: 123
+  study_period: [1997, 2026]
+  development_period: [1997, 2020]
+  temporal_period: [2021, 2026]
+
+pcoma_c:
+  high_complexity: 122
+  development_high_complexity: 100
+  temporal_high_complexity: 22
+  final_model: "CatBoost"
+  oof_auc: 0.911
+  oof_ci: [0.880, 0.939]
+  temporal_auc: 0.943
+  temporal_ci: [0.894, 0.978]
+  temporal_pr_auc: 0.800
+  temporal_brier: 0.078
+  recalibrated_temporal_brier: 0.077
+  sensitivity: 0.842
+  specificity: 0.886
+  ppv: 0.631
+  npv: 0.967
+  balanced_accuracy: 0.864
+  f1: 0.721
+  mcc: 0.708
+  optimism: 0.030
+  optimism_corrected_auc: 0.912
+  domain_ablation:
+    clinical_only: 0.712
+    plus_morphology: 0.804
+    plus_pcoma_p1: 0.854
+    plus_acha: 0.878
+    plus_perforators: 0.912
+    plus_cn3: 0.927
+    full: 0.943
+  sparse_score_range: [0, 19]
+  sparse_score_temporal_auc: 0.844
+
+pcoma_r:
+  events: 87
+  development_events: 69
+  temporal_events: 18
+  final_model: "CatBoost"
+  oof_auc: 0.681
+  oof_ci: [0.615, 0.744]
+  temporal_auc: 0.703
+  temporal_ci: [0.565, 0.832]
+  internal_pr_auc: 0.212
+  temporal_pr_auc: 0.314
+  internal_brier: 0.112
+  temporal_brier: 0.118
+  sensitivity: 0.668
+  specificity: 0.614
+  ppv: 0.195
+  npv: 0.935
+  balanced_accuracy: 0.641
+  f1: 0.302
+  mcc: 0.238
+  optimism: 0.070
+  optimism_corrected_auc: 0.682
+  domain_ablation:
+    clinical_only: 0.591
+    morphology_only: 0.642
+    pcoma_p1_only: 0.671
+    acha_only: 0.652
+    perforators_only: 0.684
+    combined_vascular_anatomy: 0.698
+    full_catboost: 0.703
+  sparse_score_declared_range: [0, 17]
+  sparse_score_temporal_auc: 0.644
+  sparse_score_weights_status: "locked 0-17 integer vector not embedded"
+
+pcoma_o:
+  eligible: 175
+  development_n: 145
+  temporal_n: 30
+  complete_recovery_90d: 112
+  complete_recovery_6m: 142
+  complete_recovery_12m: 155
+  complete_recovery_24m: 156
+  median_first_improvement_days: 28
+  median_complete_recovery_days: 61
+  survival_models:
+    cox_c_index: 0.812
+    elastic_net_cox_c_index: 0.824
+    random_survival_forest_c_index: 0.841
+    gradient_boosted_survival_c_index: 0.846
+    xgboost_aft_c_index: 0.858
+    integrated_brier: 0.118
+  time_dependent_auc:
+    "90d": 0.874
+    "6m": 0.889
+    "12m": 0.902
+  fixed_horizon_12m_models:
+    elastic_net_auc: 0.861
+    random_forest_auc: 0.858
+    extra_trees_auc: 0.885
+    ebm_auc: 0.871
+    tabpfn_auc: 0.848
+    lightgbm_auc: 0.892
+    catboost_auc: 0.888
+    xgboost_auc: 0.902
+  selected_landmark_model: "XGBoost"
+  selected_landmark_positive_class: "persistent CN III dysfunction at 12 months"
+  selected_landmark_auc: 0.902
+  selected_landmark_ci: [0.828, 0.960]
+  selected_landmark_pr_auc: 0.666
+  selected_landmark_brier: 0.075
+  selected_landmark_calibration_slope: 0.960
+  optimism: 0.038
+  optimism_corrected_c_index: 0.820
+  sparse_score_range: [0, 22]
+  sparse_score_derivation_auc: 0.968
+  sparse_score_ci: [0.934, 0.991]
+
+pcoma_e:
+  eligible: 635
+  mrs_0_2: 468
+  mrs_gt2: 167
+  mrs_distribution:
+    "0": 148
+    "1": 165
+    "2": 155
+    "3": 89
+    "4": 26
+    "5": 5
+    "6": 47
+  ordinal_concordance: 0.866
+  somers_dxy: 0.732
+  quadratic_weighted_kappa: 0.634
+  ranked_probability_score: 0.184
+  average_absolute_ordinal_error: 0.870
+  secondary_binary_model: "elastic-net logistic regression"
+  binary_oof_auc: 0.883
+  binary_oof_ci: [0.851, 0.912]
+  binary_temporal_auc: 0.878
+  binary_temporal_ci: [0.771, 0.959]
+  internal_pr_auc: 0.758
+  temporal_pr_auc: 0.759
+  uncalibrated_temporal_brier: 0.112
+  recalibrated_temporal_brier: 0.087
+  sensitivity: 0.828
+  specificity: 0.784
+  ppv: 0.596
+  npv: 0.924
+  balanced_accuracy: 0.806
+  f1: 0.693
+  mcc: 0.609
+  optimism: 0.009
+  optimism_corrected_c_index: 0.857
+  domain_ablation:
+    clinical: 0.856
+    plus_morphology: 0.866
+    plus_pcoma_anatomy: 0.872
+    full: 0.878
+  sparse_score_range: [0, 22]
+  sparse_score_temporal_auc: 0.838
+
+conformal:
+  pcoma_c_coverage: 0.927
+  pcoma_c_average_set_size: 1.060
+  pcoma_r_coverage: 0.911
+  pcoma_r_average_set_size: 1.130
+  pcoma_e_coverage: 0.923
+  pcoma_e_average_set_size: 1.200
+
+inter_observer:
+  fetal_pca_kappa: 0.872
+  pcoma_incorporation_kappa: 0.841
+  acha_incorporation_kappa: 0.793
+  perforator_incorporation_kappa: 0.766
+  aneurysm_projection_kappa: 0.768
+  cn3_compression_weighted_kappa: 0.818
+  cn3_grooving_weighted_kappa: 0.834
+  pcoma_diameter_icc: 0.894
+  p1_diameter_icc: 0.876
+  acha_distance_icc: 0.812
+  aneurysm_cn3_distance_icc: 0.848
+  neck_width_icc: 0.912
+  carotid_oculomotor_window_icc: 0.784
